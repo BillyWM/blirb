@@ -1,0 +1,43 @@
+article {
+    disclaimer-box {
+        justify-self: center;
+
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+
+        margin-bottom: 2rem;
+
+        width: 80%;
+        height: 6rem;
+
+        border: 1px dashed RGBA(0,0,0,0.8);
+
+        font-style: italic;
+
+        position: relative;
+    }
+}
+
+disclaimer-box::before {
+    content: "disclaimer";
+    font-variant: small-caps;
+    position: absolute;
+    top: -1rem;
+    min-width: 10rem;
+    justify-self: center;
+    background-color: RGBA(255, 255, 255, 1);
+}
+
+disclaimer-box[draft]::after {
+    content: "This is an article is a draft"
+}
+
+disclaimer-box[programming]::after {
+    content: "This article is about a technical topic where background information is not provided for benefit of the audience"
+}
+
+disclaimer-box[programming][draft]::after {
+    content: "This article is about a technical topic (and in a draft state). This is a personal blog, so background information is not provided for benefit of the audience"
+}

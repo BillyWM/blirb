@@ -1,0 +1,57 @@
+@use "boxes";
+@use "homepage";
+@use "blog";
+
+$base-font-size: 112.5%;
+$base-line-height: 1.45em;
+$font-normal-family: 'Quattrocento Sans', sans-serif;
+$font-normal-grey: RGBA(0,0,0,0.8);
+$font-header-family: 'Work Sans', sans-serif;
+$font-header-weight: 600;
+$font-header-grey: RGBA(0,0,0,0.9);
+
+html {
+    font-size: $base-font-size;
+    line-height: $base-line-height;
+    margin: 0;
+    padding: 0;
+    min-height: -webkit-fill-available;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 800px;
+
+    font-family: $font-normal-family;
+    color: $font-normal-grey;
+}
+
+em[soft] {
+    font-weight: normal;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $font-header-family;
+    font-weight: $font-header-weight;
+    color: $font-header-grey;
+}
+
+body > footer {
+    padding: 20px 0;
+}
+
+cite[book] {
+    font-style: italic;
+}
+
+
+main.post-index {
+    min-width: 450px;
+    max-width: 700px;
+    width: 50%;
+}
+

@@ -1,0 +1,57 @@
+$bio-text-size: 2.5rem;
+
+bio-name, bio-place {
+    display: inline;
+    font-weight: bold;
+    text-shadow: 5px 6px 2px RGBA(0, 0, 0, .1);
+}
+
+body.front-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
+    overflow-x: hidden;
+
+    background-color: darken(white, 3%);
+
+    main {
+        flex: 1;
+        display: flex;
+        align-items: center;
+
+        bio-section {
+            flex: 5;
+
+            display: flex;
+            align-items: center;
+
+            text-align: center;
+            min-height: 300px;
+
+            width: 75%;
+
+            font-size: $bio-text-size;
+            line-height: $bio-text-size * 1.1;
+
+            bio-name {
+                color: lighten(darkblue, 45%);
+            }
+
+            bio-place {
+                color: lighten(darkred, 35%);
+            }
+        }
+
+        .blog-link {
+            flex: 1;
+            display: block;
+            font-size: 3rem;
+        }
+    }
+
+
+}
+

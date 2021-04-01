@@ -1,0 +1,26 @@
+#
+#
+# Crapbots
+#
+#
+
+User-agent: PetalBot
+Disallow: /
+
+User-agent: The Knowledge AI 
+Disallow:/
+
+User-agent: AhrefsBot
+Disallow:/
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: SEOkicks-Robot
+Disallow: /
+
+# Not actually Internet Archive. Some worthless SEO shit now
+User-agent: ia_archiver
+Disallow: /
+
+Sitemap: https://your domain here/sitemap.xml

@@ -1,0 +1,33 @@
+{
+  "name": "blirb",
+  "description": "Blirb: Billy's Little Idiosyncratic React Blog",
+  "homepage": "https://billy.wenge-murphy.com/projects/blirb",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.5",
+    "core-util-is": "^1.0.2",
+    "fs-extra": "^9.1.0",
+    "module-alias": "^2.2.2",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "sass": "^1.32.8",
+    "@babel/cli": "^7.13.10",
+    "@babel/core": "^7.13.10",
+    "@babel/preset-react": "^7.12.13",
+    "@babel/register": "^7.13.8"
+  },
+  "scripts": {
+    "serve": "http-server dist",
+    "clean": "rm -rf dist/*",
+    "generate": "node generate",
+    "upload-site": "echo [redacted. figure this one out yourself lol]",
+    "preview": "yarn clean && yarn generate && yarn serve",
+    "publish-site": "yarn clean && yarn generate && yarn upload-site"
+  },
+  "author": "William Wenge-Murphy <billy@wenge-murphy.com> (https://billy.wenge-murphy.com/)",
+  "_moduleAliases": {
+    "@components": "components",
+    "@lib": "lib"
+  },
+  "version": "0.1.0",
+  "license": "AGPL-3.0-or-later"
+}
